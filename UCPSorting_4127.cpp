@@ -30,6 +30,27 @@ using namespace std;
 int iqbal[27]; //Deklarasi array iqbal dengan ukuran 27
 int n; //Deklarasi variabel n untuk menyimpan banyaknya elemen pada array
 
+void input() { //Prosedur untuk input
+	while (true) { //Looping
+		cout << "Masukkan banyaknya elemen pada array : "; //Output ke layar
+		cin >> n; //Input dari pengguna
+		if (n <= 27) //Jika n kurang dari sama dengan 27
+			break; //Keluar dari loop
+		else { //Jika n lebih dari 20
+			cout << "\nArray maksimal 27 elemen. \n"; //Output ke layar
+		}
+	}
+	cout << endl; //Output baris kosong
+	cout << "==========" << endl; //Output ke layar
+	cout << "Masukkan elemen array" << endl; //Output ke layar
+	cout << "==========" << endl; //Output ke layar
+
+	for (int i = 0; i < n; i++) { //Looping dengan i dimulai dari 0 hingga n-1
+		cout << "Data ke-" << (i + 1) << ": "; //Output ke layar
+		cin >> iqbal[i]; //Input dari pengguna
+	}
+}
+
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 
