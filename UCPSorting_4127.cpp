@@ -24,8 +24,11 @@
 //3. 
 // a. n-1
 
+#include<iostream>
+using namespace std;
 
-
+int iqbal[27]; //Deklarasi array iqbal dengan ukuran 27
+int n; //Deklarasi variabel n untuk menyimpan banyaknya elemen pada array
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
