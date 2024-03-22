@@ -51,6 +51,42 @@ void input() { //Prosedur untuk input
 	}
 }
 
+void SelectionSort() { //Prosedur untuk mengurutkan array dengan SelectionSort
+	int min_index, i, j{};
+	do {
+		for (int j = 0; j <= n - 2; j++) {
+			if (iqbal[i] < iqbal[min_index]) {
+				int temp;
+				temp = iqbal[j];
+				iqbal[j] = iqbal[j + 1];
+				iqbal[j + 1] = temp;
+			}
+		}min_index = j;
+	} while (i = j + 1 && i <= n - 1);
+}
+
+void display() {
+	cout << endl;
+	cout << "=============" << endl;
+	cout << "Element Array yang telah tersusun" << endl;
+	cout << "=============" << endl;
+	for (int j = 0; j < n; j++) {
+		cout << iqbal[j] << endl; //Output each array element on a new line
+	}
+	cout << "Jumlah Pass = " << n - 1 << endl; //Correctly shows the total number of elements
+	cout << endl;
+}
+
+int main() {
+
+	input(); //Memanggil procedur input()
+	SelectionSort(); //Mengurutkan data dengan algoritma selection sort
+	display(); //Memanggil procedur display()
+	system("pause");
+
+	return 0;
+}
+
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 
